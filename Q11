@@ -1,0 +1,52 @@
+
+public class Q11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] a= {"a","b","d","e"};
+		String[] b= {"d","c","b","e",};
+		int c=0;
+		for(int i=0;i<a.length;i++) 
+		{
+			int d=0;
+			for(int j=0;j<b.length;j++)
+			{
+				if(a[i]==b[j])
+				{
+					d++;
+				}
+			}
+			if(d>0)
+				c++;
+			else {
+				System.out.println("they are not same");
+				break;
+			}
+			
+		}
+		int e=0;
+		for(int i=0;i<b.length;i++) 
+		{
+			int d=0;
+			for(int j=0;j<a.length;j++)
+			{
+				if(b[i]==a[j])
+				{
+					d++;
+				}
+			}
+			if(d>0)
+				e++;
+			else {
+				System.out.println("they are not same");
+				break;
+			}
+			
+		}
+		if(c==a.length && e==b.length)
+		{
+			System.out.println("they are same");
+		}
+	}
+
+}
